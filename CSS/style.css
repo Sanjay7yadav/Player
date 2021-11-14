@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Jost",sans-serif;
+}
+.text{
+    color: red;
+    text-shadow:2px 2px yellowgreen;
+    font-size: 25px;
+}
+#title{
+    margin-top: 10px;
+}
+
+.main_div{
+    width: 100vw;
+    height: 70vw;
+    place-items: center;
+    background-repeat: repeat;
+    display: grid;  
+}
+#artist{
+    margin-top: 10px;
+}
+.music_container{
+    width: 35rem;
+    height: 55rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    text-align: center;
+    
+}
+.music_container #title{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: #171717;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+.music_container #artist{
+    color: green;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+.img_container{
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+img{
+    
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5 rgba(0, 0, 0, 0.4);
+}
+.music_controls{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 3rem;
+}
+.music_controls .fas{
+    color: #111111;
+    font-size: 2rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+}
+.music_controls .main_button{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #111;
+    color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.music_controls .fas:hover{
+    color: red;
+}
+.music_controls .fa-play:hover{
+    background-color: #f6f6f6;
+    color: #111;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+/*add animation class to animate */
+.anime{
+    animation: rotatePlayer 3s  linear infinite;
+}
+@keyframes rotatePlayer{
+    from {transform: rotate(0deg);}
+    to{
+        transform: rotate(360deg);
+    }
+}
+.video{
+    align-items: center;
+    margin-left: 100px;
+}
+.back{
+    background-image: url(music2.jpg);
+    width: 100vw;
+    height: 80vw;
+    display: grid;
+    place-items: center;
+    ;
+    
+}
+.name{
+    color:green;
+    
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px red;
+}
